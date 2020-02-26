@@ -13,7 +13,7 @@ public class ConnectionFactory {
         }
 
         try {
-            return DriverManager.getConnection("jdbc:mysql://localhost/fj21", "root", "password");
+            return DriverManager.getConnection("jdbc:mysql://localhost/fj21", "rootx", "password");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
