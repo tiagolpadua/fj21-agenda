@@ -1,5 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib uri="http://displaytag.sf.net" prefix="display"%>
 <body>
 	<c:import url="cabecalho.jsp" />
 
@@ -45,5 +46,12 @@
 		</tbody>
 	</table>
 
+<%-- 	<display:table name="${dao.lista}"> --%>
+<%-- 		<display:column property="nome" /> --%>
+<%-- 		<display:column property="email"/> --%>
+<%-- 		<display:column property="endereco"/> --%>
+<%-- 		<display:column property="dataNascimento.time"/> --%>
+<%-- 	</display:table> --%>
+	
 	<c:import url="rodape.jsp" />
-</body>
+	< /body>
