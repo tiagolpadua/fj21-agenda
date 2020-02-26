@@ -9,7 +9,7 @@
 	%>
 	<br />
 	<%
-	    String desenvolvido = "Desenvolvido por (SEU NOME AQUI)";
+	    String desenvolvido = "Desenvolvido por Tiago Pádua";
 	%>
 	<%=desenvolvido%>
 	<br />
