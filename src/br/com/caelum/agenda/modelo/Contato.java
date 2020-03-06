@@ -1,5 +1,6 @@
 package br.com.caelum.agenda.modelo;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class Contato {
@@ -47,5 +48,10 @@ public class Contato {
 
     public void setDataNascimento(Calendar dataNascimento) {
         this.dataNascimento = dataNascimento;
+    }
+    
+    public String getDataNascimentoFormatada() {
+    	SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+        return format.format(this.dataNascimento.getTime());
     }
 }

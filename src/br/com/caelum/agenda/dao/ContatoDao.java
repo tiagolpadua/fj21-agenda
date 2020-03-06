@@ -49,11 +49,11 @@ public class ContatoDao {
         }
     }
 
-    public List<Contato> pesquisar(int id) {
+    public Contato pesquisar(int id) {
         try {
             PreparedStatement stmt = this.connection.prepareStatement("select * from contatos where id=?");
             stmt.setInt(1, id);
-            return listar(stmt);
+            return listar(stmt).get(0);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

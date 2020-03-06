@@ -3,6 +3,8 @@
 <%@ taglib uri="http://displaytag.sf.net" prefix="display"%>
 <body>
 	<c:import url="cabecalho.jsp" />
+	
+	<a href="mvc?logica=FormAdicionaContatoLogic">Adicionar</a>
 
 	<table>
 		<thead>
@@ -39,6 +41,8 @@
 					<td><fmt:formatDate value="${contato.dataNascimento.time}"
 							pattern="dd/MM/yyyy" /></td>
 
+					<td><a href="mvc?logica=FormAlteraContatoLogic&id=${contato.id}">Alterar</a>
+					</td>
 					<td><a href="mvc?logica=RemoveContatoLogic&id=${contato.id}">Remover</a>
 					</td>
 				</tr>
