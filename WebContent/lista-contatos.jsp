@@ -4,9 +4,6 @@
 <body>
 	<c:import url="cabecalho.jsp" />
 
-	<!-- cria o DAO -->
-	<jsp:useBean id="dao" class="br.com.caelum.agenda.dao.ContatoDao" />
-
 	<table>
 		<thead>
 			<tr>
@@ -18,7 +15,7 @@
 		</thead>
 		<tbody>
 			<!-- percorre contatos montando as linhas da tabela -->
-			<c:forEach var="contato" items="${dao.lista}" varStatus="id">
+			<c:forEach var="contato" items="${contatos}" varStatus="id">
 				<tr bgcolor="#${id.count % 2 == 0 ? 'aaee88' : 'ffffff' }">
 					<td>${contato.nome}</td>
 					<td>
