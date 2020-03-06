@@ -41,17 +41,20 @@
 					<td>${contato.endereco}</td>
 					<td><fmt:formatDate value="${contato.dataNascimento.time}"
 							pattern="dd/MM/yyyy" /></td>
+
+					<td><a href="mvc?logica=RemoveContatoLogic&id=${contato.id}">Remover</a>
+					</td>
 				</tr>
 			</c:forEach>
 		</tbody>
 	</table>
 
-<%-- 	<display:table name="${dao.lista}"> --%>
-<%-- 		<display:column property="nome" /> --%>
-<%-- 		<display:column property="email"/> --%>
-<%-- 		<display:column property="endereco"/> --%>
-<%-- 		<display:column property="dataNascimento.time"/> --%>
-<%-- 	</display:table> --%>
-	
+	<%-- 	<display:table name="${dao.lista}"> --%>
+	<%-- 		<display:column property="nome" /> --%>
+	<%-- 		<display:column property="email"/> --%>
+	<%-- 		<display:column property="endereco"/> --%>
+	<%-- 		<display:column property="dataNascimento.time"/> --%>
+	<%-- 	</display:table> --%>
+
 	<c:import url="rodape.jsp" />
-	< /body>
+	</body>
