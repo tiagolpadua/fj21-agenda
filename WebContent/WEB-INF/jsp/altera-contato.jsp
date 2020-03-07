@@ -12,7 +12,7 @@
 	<c:import url="cabecalho.jsp" />
 	<h1>Altera Contato</h1>
 	<hr />
-	<form action="mvc?logica=AlteraContatoLogic" method="POST">
+	<form action="mvc?logica=MantemContatoLogic" method="POST">
 		<input type="hidden" name="id" value="${contato.id}"/>
 		Nome: <input type="text" name="nome" value="${contato.nome}"/><br />
 		E-mail: <input type="text" name="email" value="${contato.email}"/><br />

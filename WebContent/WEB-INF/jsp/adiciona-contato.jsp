@@ -12,7 +12,7 @@
 	<c:import url="cabecalho.jsp" />
 	<h1>Adicionar Contato</h1>
 	<hr />
-	<form action="mvc?logica=AdicionaContatoLogic" method="POST">
+	<form action="mvc?logica=MantemContatoLogic" method="POST">
 		Nome: <input type="text" name="nome"/><br />
 		E-mail: <input type="text" name="email"/><br />
 		Endereço: <input type="text" name="endereco"/><br />

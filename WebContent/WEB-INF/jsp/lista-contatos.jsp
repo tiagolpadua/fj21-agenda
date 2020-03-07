@@ -4,7 +4,7 @@
 <body>
 	<c:import url="cabecalho.jsp" />
 	
-	<a href="mvc?logica=FormAdicionaContatoLogic">Adicionar</a>
+	<a href="mvc?logica=FormMantemContatoLogic">Adicionar</a>
 
 	<table>
 		<thead>
@@ -41,7 +41,7 @@
 					<td><fmt:formatDate value="${contato.dataNascimento.time}"
 							pattern="dd/MM/yyyy" /></td>
 
-					<td><a href="mvc?logica=FormAlteraContatoLogic&id=${contato.id}">Alterar</a>
+					<td><a href="mvc?logica=FormMantemContatoLogic&id=${contato.id}">Alterar</a>
 					</td>
 					<td><a href="mvc?logica=RemoveContatoLogic&id=${contato.id}">Remover</a>
 					</td>
