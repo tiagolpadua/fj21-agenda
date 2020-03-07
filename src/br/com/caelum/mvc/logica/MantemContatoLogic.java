@@ -1,5 +1,6 @@
 package br.com.caelum.mvc.logica;
 
+import java.sql.Connection;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -50,7 +51,11 @@ public class MantemContatoLogic implements Logica {
 		contato.setDataNascimento(dataNascimento);
 
 		// salva o contato
-		ContatoDao dao = new ContatoDao();
+		// busca a conexão pendurada na requisição
+		Connection connection = (Connection) req.getAttribute("conexao");
+
+		// passe a conexão no construtor
+		ContatoDao dao = new ContatoDao(connection);
 
 		if (isAlteracao) {
 			dao.altera(contato);
